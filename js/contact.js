@@ -2,7 +2,7 @@ $(function() {
     $("#contact-form").validator(),
     $("#contact-form").on("submit", function(e) {
         if (!e.isDefaultPrevented()) {
-            var t = "contact_send.php"
+            var t = wpApiSettings.root + "contact_send.php"
             return $.ajax({
                 type: "POST",
                 url: t,
