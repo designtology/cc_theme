@@ -16,13 +16,13 @@
                 echo $contact_title;
               }
               else{
-                echo "Jetzt kostenlos beraten:";
+                echo "Contact us now:";
               }
             ?>
           </h2>
         </div>
-
-        <div class="description"><p>Fragen kostet nichts! Zögere nicht, das Kontaktformular zu benutzen oder anzurufen:<br><?php echo get_option('contact_phone'); ?></p></div>
+        <div class="description"><p>Do not hesistate to drop us a message or mail us directly:</p>
+        <p class="contact_phone"><?php echo get_option('contact_phone'); ?></p></div>
         <div class="contact_name"><?php echo get_option('contact_name'); ?></div>
         <div class="contact_title"><?php echo get_option('contact_title'); ?></div>    
 
@@ -38,13 +38,13 @@
             <div class="form_names">
 
               <div class="form-group">
-                <label for="form_name">Vorname *</label>
+                <label for="form_name">Name *</label>
                 <input id="form_name" type="text" name="name" class="form-control" placeholder="Max" required="required" data-error="Firstname is required.">
                 <div class="help-block with-errors"></div>
               </div>
 
               <div class="form-group">
-                <label for="form_lastname">Nachname *</label>
+                <label for="form_lastname">Surname *</label>
                 <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Mustermann" required="required" data-error="Lastname is required.">
                 <div class="help-block with-errors"></div>
               </div>
@@ -60,7 +60,7 @@
               </div>
 
               <div class="form-group">
-                <label for="form_phone">Telefon</label>
+                <label for="form_phone">Phone</label>
                 <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="0123 456 798 0">
                 <div class="help-block with-errors"></div>
               </div>
@@ -69,8 +69,8 @@
 
             <div class="row">
               <div class="form-group">
-                <label for="form_message">Nachricht *</label>
-                <textarea id="form_message" name="message" class="form-control" placeholder="Sehr geehrte Damen und Herren, ..." rows="5" required="required" data-error="Please,leave us a message."></textarea>
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control" placeholder="To whom it may concern, ..." rows="5" required="required" data-error="Please, leave us a message."></textarea>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -78,29 +78,26 @@
             <div class="row form_checkboxes form-group">
 
               <div class="checkbox_datenschutz"><input class="form_checkbox" type="checkbox" id="datenschutz" name="datenschutz" required="required" data-error="Bitte Datenschutz akzeptieren">
-                <label for="datenschutz">Ich erkläre mich mit der Datenspeicherung und
-                -bearbeitung für meine Anfrage einverstanden
-                und möchte von Ihnen kontaktiert werden.
-                Informationen zum Datenschutz und Ihrem
-                Widerrufsrecht finden Sie <a href="datenschutz.php">hier</a>.</label>*
+                <label for="datenschutz">We use cookies to provide necessary website functionality. By using this form, you agree to our <a href="datenschutz.php">terms</a>.</label>*
+
                 
                 <div class="help-block with-errors"></div>
 
               </div>
 
 
-              <div class="g-recaptcha" data-sitekey="6LfcSroZAAAAAGy-_-cLKlIus4rvIdQ4PdU7y_Za">
+              <div class="g-recaptcha" data-sitekey="<?php echo get_option('captcha_site_key'); ?>">
                 
               </div>
             
             </div>               
 
             <div class="row">
-              <button type="submit" class="btn btn-send btn-block disabled" value="Send message">Absenden</button>
+              <button type="submit" class="btn btn-send btn-block disabled" value="Send message">Send Message</button>
             </div>
 
             <div class="row">
-              <p class="text-muted"><strong>*</strong> Eingabe erforderlich.</p>
+              <p class="text-muted"><strong>*</strong> Required.</p>
             </div>
           </div>
 

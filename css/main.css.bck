@@ -2724,6 +2724,7 @@ input {
   color: var(--light-contrast);
   padding: 20px 32px;
   transition: 400ms;
+  z-index: 9999;
 }
 
 .cookie_message.active {

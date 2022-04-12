@@ -290,6 +290,49 @@ function display_email_element()
     <?php
 }
 
+
+function display_form_email_element()
+{
+    ?>
+        <input type="text" name="contact_form_email" id="contact_form_email" value="<?php echo get_option('contact_form_email'); ?>" />
+    <?php
+}
+
+
+
+function display_linkedin_element()
+{
+    ?>
+        <input type="text" name="linkedin_url" id="linkedin_url" value="<?php echo get_option('linkedin_url'); ?>" />
+    <?php
+}
+
+
+function display_ust_id_element()
+{
+    ?>
+        <input type="text" name="ust_id" id="ust_id" value="<?php echo get_option('ust_id'); ?>" />
+    <?php
+}
+
+
+function display_captcha_site_key_element()
+{
+    ?>
+        <input type="text" name="captcha_site_key" id="captcha_site_key" value="<?php echo get_option('captcha_site_key'); ?>" />
+    <?php
+}
+
+
+function display_captcha_secret_key_element()
+{
+    ?>
+        <input type="text" name="captcha_secret_key" id="captcha_secret_key" value="<?php echo get_option('captcha_secret_key'); ?>" />
+    <?php
+}
+
+
+
 function display_theme_panel_fields()
 {
     add_settings_section("section", "Settings", null, "theme-options");
@@ -301,6 +344,11 @@ function display_theme_panel_fields()
     add_settings_field("contact_city", "Zip and City", "display_city_element", "theme-options", "section");
     add_settings_field("contact_phone", "Phone Number", "display_phone_element", "theme-options", "section");
     add_settings_field("contact_email", "Email", "display_email_element", "theme-options", "section");
+    add_settings_field("contact_form_email", "Kontaktformular Email", "display_form_email_element", "theme-options", "section");
+    add_settings_field("ust_id", "Steuer ID", "display_ust_id_element", "theme-options", "section");
+    add_settings_field("captcha_site_key", "Captcha Site Key", "display_captcha_site_key_element", "theme-options", "section");
+    add_settings_field("captcha_secret_key", "Captcha Secret Key", "display_captcha_secret_key_element", "theme-options", "section");
+    add_settings_field("linkedin_url", "LinkedIn URL", "display_linkedin_element", "theme-options", "section");
 
     register_setting("section", "contact_name");
     register_setting("section", "contact_title");
@@ -309,6 +357,11 @@ function display_theme_panel_fields()
     register_setting("section", "contact_city");
     register_setting("section", "contact_phone");
     register_setting("section", "contact_email");
+    register_setting("section", "contact_form_email");
+    register_setting("section", "ust_id");
+    register_setting("section", "captcha_site_key");
+    register_setting("section", "captcha_secret_key");
+    register_setting("section", "linkedin_url");
 }
 
 add_action("admin_init", "display_theme_panel_fields");

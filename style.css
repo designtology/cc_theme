@@ -464,6 +464,11 @@ p.menu{
   font-size: 12px;
 }
 
+.contact_phone{
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
 #contact-form label {
   font-weight: 300;
   font-size: 13px;
@@ -2758,6 +2763,7 @@ input {
   background: var(--dark-contrast);
   color: var(--light-contrast);
   padding: 20px 32px;
+  z-index: 999;
   transition: 400ms;
 }
 
@@ -2794,10 +2800,19 @@ input {
 .footer a{
   font-size: 13px;
 }
+
 .address{
   display: flex;
   justify-content: center;
   align-items: flex-end;  
+}
+
+.address.impressum{
+  justify-content: flex-start;
+}
+
+.address.impressum p{
+  margin: 0;
 }
 
 .address p{

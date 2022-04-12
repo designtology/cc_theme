@@ -22,7 +22,6 @@
 
         <div class="header_text_intro">
           <div class="header_title"><?php single_post_title(); ?></div>
-          <div class="header_subtitle">We offer feature films services for documentaries, narratives & coverage stories</div>
 
 
         </div>

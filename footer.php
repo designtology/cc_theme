@@ -17,7 +17,7 @@
             </div>
 
             <div class="copyright_frame">
-                <div><a href="https://www.linkedin.com/in/barissarial/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/linkedin.svg" class="social_icon"></a></div>
+                <div><a href="<?php echo get_option('linkedin_url'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/linkedin.svg" class="social_icon"></a></div>
                 <div><p class="copyright">&copy; <?php echo get_option('contact_name'); ?>, <?php echo date("Y"); ?></p></div>
             </div>
 
