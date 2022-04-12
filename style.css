@@ -1,7 +1,7 @@
 /*
-Theme Name: cc_movinapes
-Text Domain: cc_movinapes
-Version: 1.1
+Theme Name: cc_theme
+Text Domain: cc_theme
+Version: 1.2
 Description: New CC Theme Test
 */
 
@@ -445,7 +445,7 @@ p.menu{
 .form-group .form-control {
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--dark-contrast);
+  color: var(--light-contrast);
 }
 
 .trenner_contact .content, #contact-form {
