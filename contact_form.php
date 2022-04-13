@@ -23,7 +23,7 @@
       </div>
 
       <div class="row contact_form">
-        <form id="contact-form" method="post" action="contact_send.php" role="form" novalidate="true">
+        <form id="contact-form" method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/contact_send.php" role="form" novalidate="true">
 
           <div class="messages"></div>
 

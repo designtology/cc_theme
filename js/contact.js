@@ -1,11 +1,14 @@
 $(function() {
+$template_uri = get_stylesheet_directory_uri();
+
+
     $("#contact-form").validator(),
     $("#contact-form").on("submit", function(e) {
         if (!e.isDefaultPrevented()) {
-            var t = wpApiSettings.root + "contact_send.php"
+            var t = $template_uri . "caontact_send.php"
             return $.ajax({
                 type: "POST",
-                url: t,
+                url: wpApiSettings.root + t,
                 data: $(this).serialize(),
                 success: function(e) {
                     var t = "alert-" + e.type
