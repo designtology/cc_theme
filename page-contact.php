@@ -29,7 +29,7 @@
         <div class="description"><p><a href="mailto:kontakt@crosscreations.de?subject=Kontakt über crosscreations.de">kontakt@crosscreations.de</a></p></div>
       </div>
       <div class="row contact_form">
-        <form id="contact-form" method="post" action="page-contact.php" role="form" novalidate="true">
+        <form id="contact-form" method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/contact_send.php" role="form" novalidate="true">
 
           <div class="messages"></div>
 

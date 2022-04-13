@@ -26,8 +26,10 @@
             <?php echo get_option('contact_city'); ?><br>
             <?php echo get_option('contact_phone'); ?><br><br>
             <a href="mailto:<?php echo get_option('contact_email'); ?>?subject=Kontakt über Webseite"><?php echo get_option('contact_email'); ?></a><br><br>
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-            <?php echo get_option('ust_id'); ?><br><br>
+            <?php if(get_option('ust_id')) { ?>
+              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+              <?php echo get_option('ust_id');?><br><br>
+            <?php } ?>
             </p>
         </div>
 

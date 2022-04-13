@@ -5,7 +5,7 @@ $template_uri = get_stylesheet_directory_uri();
     $("#contact-form").validator(),
     $("#contact-form").on("submit", function(e) {
         if (!e.isDefaultPrevented()) {
-            var t = $template_uri . "caontact_send.php"
+            var t = "contact_send.php"
             return $.ajax({
                 type: "POST",
                 url: wpApiSettings.root + t,

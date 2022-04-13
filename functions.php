@@ -367,7 +367,7 @@ function display_theme_panel_fields()
 add_action("admin_init", "display_theme_panel_fields");
 
 
-add_action( 'rest_api_init', function () {
+/*add_action( 'rest_api_init', function () {
         register_rest_route( 'monacoder/v1', '/', array(
                 'methods' => 'POST',
                 'callback' => 'monacoder_data'
@@ -378,5 +378,5 @@ add_action( 'rest_api_init', function () {
 function monacoder_data( $request ) {
     return "response";
 }
-
+*/
 ?>
