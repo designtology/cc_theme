@@ -60,7 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:image" property="og:image" content="https://site.crosscreations.de/images/header/twitter_card.png">
 
 </head>
-<body>
+<body data-theme-url="<?php echo get_stylesheet_directory_uri(); ?>">
 
 
 <svg class="defs" id="pause-button-shape">
