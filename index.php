@@ -16,7 +16,7 @@
 
   <div class="scroll_wrapper">
 
-    <div class="container ghost gradient ">
+    <div class="container ghost gradient index">
             
       <iframe class="fullvid" id="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; fullscreen"> </iframe> 
 
