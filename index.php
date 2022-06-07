@@ -2,12 +2,10 @@
 
 <?php get_header(); ?>
 
-
-
-<?php include "video_overlay.php";
-$img_var = ""; ?>
+<?php include "video_overlay.php"; $img_var = ""; ?>
 
 <div class="background_scroll_wrapper">
+
 
 
 <?php
@@ -18,7 +16,7 @@ $img_var = ""; ?>
 
   <div class="scroll_wrapper">
 
-    <div class="container ghost gradient index">
+    <div class="container ghost gradient ">
             
       <iframe class="fullvid" id="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay; fullscreen"> </iframe> 
 
@@ -28,9 +26,6 @@ $img_var = ""; ?>
       </div>
 
     </div>
-
-
-
 
 
 <?php $bg_color = "blue_bg"; ?>
@@ -65,17 +60,6 @@ $img_var = ""; ?>
 
 
 <?php include "leistungen.php"; ?>
-
-
-<?php /*$variable ="reverse"; $img_var ="images/articles/article_service.png"; include "article.php"; */?>
-
-
-
-
-
-
-
-
 
 <?php 
 

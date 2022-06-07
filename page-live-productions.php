@@ -128,7 +128,7 @@
 
 
       <div class="image_tile">
-        <div class="image_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php the_field('image_left'); ?>') center/cover"></div>
+        <div class="image_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php the_field('image_center'); ?>') center/cover"></div>
         
         <div class="image_text_overlay">
           
@@ -140,7 +140,7 @@
 
 
       <div class="image_tile">
-        <div class="image_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php the_field('image_left'); ?>') center/cover"></div>
+        <div class="image_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php the_field('image_right'); ?>') center/cover"></div>
         
         <div class="image_text_overlay">
           

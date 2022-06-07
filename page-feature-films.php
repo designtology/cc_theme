@@ -12,15 +12,36 @@
 
   $bg_video = get_field('background_video');
 
+  $temp = get_field("background_type");
+
 ?>
 
   <div class="scroll_wrapper">
 
     <div class="container ghost">
             
-      <iframe class="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" allowfullscreen></iframe>
+      <?php
 
-        <div class="header_text_intro">
+          switch ($temp){
+
+            case 'Video':?>
+              <iframe class="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" allowfullscreen></iframe>
+            <?php
+            break;
+            case 'Image':?>
+              <img class="header_still" src="<?php the_field("background_image"); ?>">
+            <?php
+            break;
+            case 'Slider':
+               echo do_shortcode('[smartslider3 slider="'.get_field("background_slider").'"]');
+            break;
+          }
+
+      ?>
+
+
+        <div class="header_text_intro" style="position:absolute;">
+
           <div class="header_title"><?php single_post_title(); ?></div>
 
 
@@ -51,7 +72,6 @@
 
       <div class="text-wrapper">
         <div class="title"><h2><?php the_title(); ?></h2></div>
-        <div class="subtitle"><?php the_field('first_article_subtitle') ?></div>
         <?php the_content();?>
       </div>
 

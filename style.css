@@ -1434,10 +1434,10 @@ a[href="nowhere"]:focus {
   overflow: hidden;  
   height: 55vh;
   margin-top: 100px;
-  background: none;  
   padding: 0;
   position: relative;
-  background: none;    -webkit-transition-duration: 0.8s;
+  background: none;
+  -webkit-transition-duration: 0.8s;
 
 }
 
@@ -1473,11 +1473,11 @@ a[href="nowhere"]:focus {
 }
 
 .header_still.live{
-  background-image: url('../images/header/bg_live.jpg'); 
+  background-image: url('../cc_movinapes/images/header/bg_live.jpg'); 
 }
 
 .header_still.about{
-  background-image: url('../images/header/corona_team.jpg');
+  background-image: url('../cc_movinapes/images/header/corona_team.jpg');
 }
 
 .ghost.case_header{
