@@ -37,15 +37,16 @@
             break;
           }
 
-      ?>
+          if($temp != "Slider"){
+            ?>
 
-
-        <div class="header_text_intro" style="position:absolute;">
-
-          <div class="header_title"><?php single_post_title(); ?></div>
-
-
+          <div class="header_text_intro" style="position:absolute;">
+            <div class="header_title"><?php single_post_title(); ?></div>
         </div>
+            <?php
+          }
+?>
+
 
     </div>
 
