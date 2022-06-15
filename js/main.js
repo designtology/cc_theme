@@ -251,6 +251,7 @@
     fullvid.requestFullscreen();
     fullvid.setVolume(1);
     ghost.toggleClass('gradient', "swing");
+    fullvidUnmuteButton.children("use").attr("href","#unmute-button-shape");    
   });
 
   fullvidUnmuteButton.click(function() {
@@ -258,11 +259,12 @@
 
     fullvid.getVolume().then(function(volume){
       if(volume == 1){
-
+        fullvidUnmuteButton.children("use").attr("href","#mute-button-shape");
         fullvid.setVolume(0);
         ghost.toggleClass('gradient', "swing");
 
       }else{
+        fullvidUnmuteButton.children("use").attr("href","#unmute-button-shape");
         fullvid.setVolume(1);
         ghost.toggleClass('gradient', "swing");
       }
