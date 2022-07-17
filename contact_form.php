@@ -8,17 +8,17 @@
                 echo $contact_title;
               }
               else{
-                echo "Contact us now:";
+                echo "Get in touch with us:";
               }
             ?>
           </h2>
         </div>
-        <div class="description"><p>Do not hesistate to drop us a message or mail us directly:<br><br>
-          <a href="mailto:DIRECTOR - DOP - FILMMAKER
+        <div class="description"><p>Use this contact form or write us directly at:<br><br>
+          <a href="mailto:<?php echo get_option('contact_email'); ?>
 ?subject=Kontakt über Webseite"><?php echo get_option('contact_email'); ?></a></p></div>
           
         <div class="contact_name"><?php echo get_option('contact_name'); ?></div>
-        <div class="contact_title">DIRECTOR - DOP - FILMMAKER
+        <div class="contact_title"><?php echo get_option('contact_title'); ?>
 </div>    
       </div>
 

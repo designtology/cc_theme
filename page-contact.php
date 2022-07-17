@@ -23,11 +23,13 @@
           </h2>
         </div>
         <div class="description"><p>Use this contact form or write us directly at:</p>
+          <a href="mailto:<?php echo get_option('contact_email'); ?>
+?subject=Kontakt über Webseite"><?php echo get_option('contact_email'); ?></a></p>       
         <p class="contact_phone"><?php echo get_option('contact_phone'); ?></p></div>
         <div class="contact_name"><?php echo get_option('contact_name'); ?></div>
         <div class="contact_title"><?php echo get_option('contact_title'); ?></div>    
 
-        <div class="description"><p><a href="mailto:kontakt@crosscreations.de?subject=Kontakt über crosscreations.de">kontakt@crosscreations.de</a></p></div>
+        <div class="description"><p><a href="mailto:<?php echo get_option('contact_email'); ?>?subject=Kontakt über movinapes.com"><?php echo get_option('contact_email'); ?></a></p></div>
       </div>
       <div class="row contact_form">
         <form id="contact-form" method="post" action="<?php echo get_stylesheet_directory_uri(); ?>/contact_send.php" role="form" novalidate="true">
