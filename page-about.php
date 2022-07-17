@@ -82,8 +82,7 @@
 
 <div class="core_monkeys container">
   <div class="wrapper title">   
-    <div class="section_title_big">Our network</div>  
-    <div class="section_title"><h4>Alpha Group</h4></div>
+    <div class="section_title"><h4>movinapes</h4></div>
   </div>
   <div class="wrapper padding_top_20">
 
@@ -97,12 +96,11 @@
 
     if( $posts ): ?>
       
-        
       <?php foreach( $posts as $post ): 
         
         setup_postdata( $post );
-        
-        ?>
+        $crew_type = get_field('crew_type');
+?>
       <div class="user_profile">
         <div class="user_picture" style="background-image:url('<?php the_field('image'); ?>');"></div>
         <div class="user_name"><?php the_field('name'); ?></div>
@@ -110,7 +108,8 @@
         <div class="user_mail"><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></div>
       </div>
       
-      <?php endforeach; ?>
+      <?php 
+            endforeach; ?>
       
       
       <?php wp_reset_postdata(); ?>
@@ -127,7 +126,7 @@
 
 <div class="core_monkeys helpful_monkeys container">
 <div class="wrapper title">   
-  <div class="section_title"><h4>Helpful Monkeys</h4></div>
+  <div class="section_title"><h4>Supporting Apes</h4></div>
 </div>
   <div class="wrapper padding_top_20">
     <?php 

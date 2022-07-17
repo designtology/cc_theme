@@ -26,10 +26,16 @@
 					<?php
 
 					  if ( has_post_thumbnail()) {
-					    echo "<li class='brands_item'>
-		   						<a href='#'>";
+					    echo "<li class='brands_item'>";
+		   						
+					    		if(get_field('brands_url')){
+		   							echo "<a href='" . get_field('brands_url') . "'>";					    			
 					    			the_post_thumbnail();
-			    		echo "</a></li>";
+		    						echo "</a>";
+					    		}else{
+					    			the_post_thumbnail();
+					    		}
+						echo "</li>";					    		
 					  }
 
 					?>

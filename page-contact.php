@@ -12,16 +12,17 @@
         <div class="title">
           <h2>
             <?php
+            $contact_title = get_field('contact_title');
               if(isset($contact_title)){
                 echo $contact_title;
               }
               else{
-                echo "Contact us now:";
+                echo "Get in touch with us:";
               }
             ?>
           </h2>
         </div>
-        <div class="description"><p>Do not hesistate to drop us a message or mail us directly:</p>
+        <div class="description"><p>Use this contact form or write us directly at:</p>
         <p class="contact_phone"><?php echo get_option('contact_phone'); ?></p></div>
         <div class="contact_name"><?php echo get_option('contact_name'); ?></div>
         <div class="contact_title"><?php echo get_option('contact_title'); ?></div>    
