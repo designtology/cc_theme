@@ -13,6 +13,7 @@
 <?php
 
   $bg_video = get_field('background_video');
+  $temp = get_field("background_type");
 
 ?>
 
