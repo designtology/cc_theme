@@ -24,7 +24,6 @@
 
         <div class="header_text_intro">
           <div class="header_title"><?php single_post_title(); ?></div>
-          <div class="header_subtitle">We offer commercial services for documentaries, narratives & coverage stories</div>
 
 
         </div>
@@ -77,7 +76,7 @@
                 
 <!-- Ende der geloopten Inhalte -->
 <?php endwhile; else : ?>
-  <p>Keine Beiträge</p>
+<?php include('no_posts.php') ?>
 <?php endif; wp_reset_postdata(); ?>
 
 <div class="core_monkeys container">

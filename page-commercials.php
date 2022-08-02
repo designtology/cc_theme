@@ -14,20 +14,41 @@
 
   $bg_video = get_field('background_video');
 
+  $temp = get_field("background_type");
+
 ?>
 
   <div class="scroll_wrapper">
 
     <div class="container ghost">
             
-      <iframe class="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" allowfullscreen></iframe>
+      <?php
 
-        <div class="header_text_intro">
-          <div class="header_title"><?php single_post_title(); ?></div>
-          <div class="header_subtitle">We offer commercial services for documentaries, narratives & coverage stories</div>
+          switch ($temp){
 
+            case 'Video':?>
+              <iframe class="fullvid" src="<?php echo $bg_video->video_url; ?>?api=1&controls=0&background=1" frameborder="0" allowfullscreen></iframe>
+            <?php
+            break;
+            case 'Image':?>
+              <img class="header_still" src="<?php the_field("background_image"); ?>">
+            <?php
+            break;
+            case 'Slider':
+               echo do_shortcode('[smartslider3 slider="'.get_field("background_slider").'"]');
+            break;
+          }
 
+          if($temp != "Slider"){
+            ?>
+
+          <div class="header_text_intro" style="position:absolute;">
+            <div class="header_title"><?php single_post_title(); ?></div>
         </div>
+            <?php
+          }
+?>
+
 
     </div>
 
@@ -77,7 +98,7 @@
                 
 <!-- Ende der geloopten Inhalte -->
 <?php endwhile; else : ?>
-  <p>Keine Beiträge</p>
+<?php include('no_posts.php') ?>
 <?php endif; wp_reset_postdata(); ?>
 
 
@@ -113,7 +134,7 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>
@@ -152,7 +173,7 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>
@@ -191,7 +212,7 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>

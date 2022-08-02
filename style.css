@@ -1834,13 +1834,27 @@ a[href="nowhere"]:focus {
 }
 
 
-
 .article .video_tile .video_area{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.video_panel .video_tile .video_area:before{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  bottom: 0;
+  transition: opacity 0.5s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.video_panel .video_tile .video_area:hover:before{
+  opacity: 0;
+}
 
   .article .text-wrapper .title{
     text-align: right;
@@ -3395,6 +3409,8 @@ transform: scale(1.2);
   left: -9999px;
 }
 
+
+
 /* ************************************ */
 /* ************************************  MEDIA SECTION */
 /* ************************************   */
@@ -3818,6 +3834,8 @@ transform: scale(1.2);
   .selected_work .video_element .video_tile{
    aspect-ratio:  16/9;
   }
+
+
 
   .black_gradient{
     background:  linear-gradient(0deg, rgba(10,10,10,1) 20%, rgba(0, 0, 0, 0) 100%);

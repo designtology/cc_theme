@@ -1,0 +1,1 @@
+<p style="background-color:var(--dark-contrast);">Keine Beiträge</p>

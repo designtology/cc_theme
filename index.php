@@ -107,7 +107,7 @@
 
 
 <?php endwhile; else : ?>
-  <p>Keine Beiträge</p>
+<?php include('no_posts.php') ?>
 <?php endif; wp_reset_postdata(); ?>
 
 

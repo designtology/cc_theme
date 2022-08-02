@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="wp-content/themes/cc_movinapes/css/reset.min.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
-<link rel="stylesheet" href="wp-content/themes/cc_movinapes/style.css?v=1.1" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
+<link rel="stylesheet" href="wp-content/themes/cc_movinapes/style.css?v=1.11" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'">
 
 <link rel="apple-touch-icon" sizes="180x180" href="images/icons/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="wp-content/themes/cc_movinapes/images/icons/favicon/favicon-32x32.png">

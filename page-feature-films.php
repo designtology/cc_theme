@@ -95,7 +95,7 @@
                 
 <!-- Ende der geloopten Inhalte -->
 <?php endwhile; else : ?>
-  <p>Keine Beiträge</p>
+<?php include('no_posts.php') ?>
 <?php endif; wp_reset_postdata(); ?>
 
 
@@ -131,7 +131,7 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>
@@ -170,7 +170,8 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_gradient"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>
@@ -209,7 +210,7 @@
 
   
       <div class="video_tile">
-        <div class="video_area" style="background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('<?php echo getVimeoThumb($video_id); ?>') center/cover"></div>
+        <div class="video_area" style="background: url('<?php echo getVimeoThumb($video_id); ?>') center/cover;"></div>
         <div class="video_text_overlay">
           <div class="video_title">
             <div>

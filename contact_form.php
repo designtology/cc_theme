@@ -1,5 +1,5 @@
 
-    <div class="container trenner_contact" style="background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg_contact.png') center;">
+    <div class="container trenner_contact" style="background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg_contact.jpg') center;">
       <div class="row content">
         <div class="title">
           <h2>
