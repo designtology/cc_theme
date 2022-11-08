@@ -171,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="mobile_menu_socials">
 <!--         <div class="mobile_menu_icons"><a href="#"><img src="images/icons/behance.svg" class="social_icon"></a></div> -->
-         <div class="mobile_menu_icons"><a href="https://www.linkedin.com/in/barissarial/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/linkedin.svg" class="social_icon"></a></div>
+        <div class="mobile_menu_icons"><a href="<?php echo get_option('linkedin_url'); ?>" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/linkedin.svg" class="social_icon"></a></div>
       </div>
 
       <div class="mobile_menu_bottoms">

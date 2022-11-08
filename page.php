@@ -99,7 +99,7 @@
 
 <div class="container video_panel">
     <div class="wrapper">
-    <div class="section_title">Our svery finest selection</div>
+    <div class="section_title">Our very finest selection</div>
     <div class="video_element">
 
 
