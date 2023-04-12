@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NCS4HRN');</script>
 
 <meta charset="UTF-8">
-<meta name="apple-mobile-web-app-title" content="Baris Sarial - crosscreations">
+<meta name="apple-mobile-web-app-title" content="movinapes - Mario Bergmann">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:url" content="https://www.movinapes.com">
 <meta name="twitter:title" content="movinapes - Mario Bergmann">
 <meta name="twitter:description" content="movinapes - Mario Bergmann">
-<meta name="twitter:image" content="https://site.crosscreations.de/images/header/twitter_card.png">
+<meta name="twitter:image" content="images/link_preview.jpg">
 
 
 <meta name="og:site_name" property="og:site_name" content="movinapes - Mario Bergmann">
@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:url" property="og:url" content="https://www.movinapes.com">
 <meta name="og:title" property="og:title" content="movinapes - Mario Bergmann">
 <meta name="og:description" property="og:description" content="movinapes - Mario Bergmann">
-<meta name="og:image" property="og:image" content="https://site.crosscreations.de/images/header/twitter_card.png">
+<meta name="og:image" property="og:image" content="images/link_preview.jpg">
 
 </head>
 
