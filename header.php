@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:url" content="https://www.movinapes.com">
 <meta name="twitter:title" content="movinapes productions">
 <meta name="twitter:description" content="movinapes productions">
-<meta name="twitter:image" content="images/link_preview.jpg">
+<meta name="twitter:image" content="/images/link_preview.jpg">
 
 
 <meta name="og:site_name" property="og:site_name" content="movinapes productions">
@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:url" property="og:url" content="https://www.movinapes.com">
 <meta name="og:title" property="og:title" content="movinapes productions">
 <meta name="og:description" property="og:description" content="movinapes productions">
-<meta name="og:image" property="og:image" content="images/link_preview.jpg">
+<meta name="og:image" property="og:image" content="/images/link_preview.jpg">
 
 </head>
 <body data-theme-url="<?php echo get_stylesheet_directory_uri(); ?>">
