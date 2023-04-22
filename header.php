@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="og:url" property="og:url" content="https://www.movinapes.com">
 <meta name="og:title" property="og:title" content="movinapes productions">
 <meta name="og:description" property="og:description" content="movinapes productions">
-<meta name="og:image" property="og:image" content="/images/link_preview.jpg">
+<meta name="og:image" property="og:image" content="https://www.movinapes.com/wp-content/uploads/2022/03/making-of-musicvideo.jpg">
 
 </head>
 <body data-theme-url="<?php echo get_stylesheet_directory_uri(); ?>">
