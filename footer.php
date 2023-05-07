@@ -15,7 +15,7 @@
                 <a href="mailto:<?php echo get_option('contact_email'); ?>?subject=Kontakt über Webseite"><?php
                   $email = explode("@", get_option('contact_email'));
                   echo $email[0];
-                  include('fa_mail_address.php')
+                  include('fa_mail_address.php');
                   echo $email[1];
                   ?></a>
                 </p>
