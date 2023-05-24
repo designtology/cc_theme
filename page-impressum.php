@@ -21,6 +21,7 @@
         <div class="address impressum">
             <p>
             <?php echo get_option('contact_name'); ?><br>
+            <?php echo get_option('contact_title'); ?><br>
             <?php echo get_option('contact_street'); ?><br>
             <?php if(get_option('contact_additional')){echo get_option('contact_additional') . "<br>";} ?>
             <?php echo get_option('contact_city'); ?><br>
