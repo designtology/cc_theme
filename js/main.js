@@ -1,4 +1,4 @@
-<><script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery_3.5.1.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery_3.5.1.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/validator_0.11.9.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/contact.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/video_player.js"></script>
@@ -269,4 +269,3 @@
   });
 
 </script>
-</>
